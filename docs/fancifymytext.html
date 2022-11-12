@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script type="text/javascript" src ="fancifymytext.js"></script>
-		<title>Fancify Shamcify</title>
 
-		<!-- link to your script file here -->
+<head>
+	<script type="text/javascript" src="fancifymytext.js"></script>
+	<title>Fancify Shamcify</title>
 
-	</head>
+	<!-- link to your script file here -->
 
-	<body>
-		<h1>Fancify my Text</h1>
+</head>
 
-		<!-- Your UI controls go here -->
-		<form>
-			<fieldset name="Text">
-				<legend>Text</legend>
-				<textarea
-						rows="4"
-						cols="30"
-						name="text_field"
-						id="text_field"
-						placeholder="enter text here"
-				></textarea>
-				<br/>
-			</fieldset>
-		</form>
+<body>
+	<h1>Fancify my Text</h1>
 
-		<form>
-			<fieldset name="Fancify">
-				<legend>Fancify</legend>
-				<button
-						type ="button"
-						onclick="enlargeText()">
-						<label>Bigger!</label>
-				</button>
-				<br/>
-				<input
-						type="radio"
-						name="radio_button"
-						id="FancyShmancy"
-						onchange="changeText()"
-				/>
-				<label for="FancyShmancy">FancyShmancy</label>
+	<!-- Your UI controls go here -->
+	<form>
+		<fieldset name="Text">
+			<legend>Text</legend>
+			<textarea 
+				rows="4" 
+				cols="30" 
+				name="text_field" 
+				id="text_field" 
+				placeholder="enter text here"></textarea>
+			<br />
+		</fieldset>
+	</form>
 
-				<br/>
-				<input
-						type="radio"
-						name="radio_button"
-						id="BoringBetty"
-						onchange="changeText()"
-				/>
-				<label for="BoringBetty">BoringBetty</label>
-			</fieldset>
-		</form>
+	<form>
+		<fieldset name="Fancify">
+			<legend>Fancify</legend>
+			<button type="button" onclick="enlargeText()">
+				<label>Bigger!</label>
+			</button>
+			<br />
+			<button type="button" onclick="addMoo()">
+				<label>Moo!</label>
+			</button>
+			<br />
+		
+			<input type="radio" 
+				name="radio_button" 
+				id="FancyShmancy" 
+				onchange="changeText()" 
+			/>
+			<label for="FancyShmancy">FancyShmancy</label>
 
-	</body>
+			<br />
+			<input type="radio" 
+				name="radio_button" 
+				id="BoringBetty" 
+				onchange="changeText()" 
+			/>
+			<label for="BoringBetty">BoringBetty</label>
+		</fieldset>
+	</form>
+
+</body>
 
 </html>
